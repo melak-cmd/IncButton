@@ -1,0 +1,20 @@
+﻿<s:SurfaceWindow x:Class="SAKT.SurfaceWindow1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+    Title="IncBtn"
+    xmlns:main="clr-namespace:IncButton"
+    xmlns:IncBtn="clr-namespace:IncButton"
+    >
+  <s:SurfaceWindow.Resources>
+    <ImageBrush x:Key="WindowBackground" Stretch="None" Opacity="0.6" ImageSource="pack://application:,,,/Resources/WindowBackground.jpg"/>
+  </s:SurfaceWindow.Resources>
+
+  <Grid Background="{StaticResource WindowBackground}" >
+
+  	<main:IncButton x:Name="Prix_Min" Margin="150,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+    <main:IncButton x:Name="Prix_Max" Margin="450,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+  	<IncBtn:IncButtonMinMax x:Name="Prix_Min_Max1" Margin="150,250,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+    <IncBtn:IncButtonMinMax x:Name="Prix_Min_Max2" Margin="450,250,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+    </Grid>
+</s:SurfaceWindow>
